@@ -6,7 +6,7 @@
 /*   By: wqarro-v <wqarro-v@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 13:19:48 by wqarro-v          #+#    #+#             */
-/*   Updated: 2018/12/10 22:48:30 by wqarro-v         ###   ########.fr       */
+/*   Updated: 2018/12/12 13:09:18 by wqarro-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,9 @@ typedef struct		s_list
 
 void				*ft_memset(void *dest, int c, size_t len);
 void				ft_bzero(void *str, size_t len);
-void				*ft_memcpy(void *dest, const void *str, size_t len);		// NULL protection
+void				*ft_memcpy(void *dest, const void *str, size_t len);
 void				*ft_memccpy(void *dest, const void *str, int c, size_t len);
-void				*ft_memmove(void *dest, const void *str, size_t len); 			// NULL protection
+void				*ft_memmove(void *dest, const void *str, size_t len);
 void				*ft_memchr(const void *str, int c, size_t len);
 int					ft_memcmp(const void *str1, const void *str2, size_t len);
 size_t				ft_strlen(const char *str);
@@ -57,7 +57,7 @@ int					ft_tolower(int c);
 
 void				*ft_memalloc(size_t size);
 void				ft_memdel(void **ap);
-char				*ft_strnew(size_t size); // size_t == -1
+char				*ft_strnew(size_t size);
 void				ft_strdel(char**as);
 void				ft_strclr(char *s);
 void				ft_striter(char *s, void (*f)(char*));
@@ -69,7 +69,7 @@ int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strtrim(char const *s);
-char				**ft_strsplit(char const *s, char c); // защитить маллоки
+char				**ft_strsplit(char const *s, char c);
 char				*ft_itoa(int n);
 void				ft_putchar(char c);
 void				ft_putstr(char const *s);
@@ -85,11 +85,11 @@ void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdel(t_list **alst, void (*del)(void*, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
-t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));	// malloc usage
+t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 size_t				ft_whitespaces(char const **s, size_t len);
 int					ft_count(int n);
-int					ft_power(int base, int power);  //допилить на отрицательный показатель
+int					ft_power(int base, int power);
 size_t				ft_wordcount(const char *s, char c);
 size_t				ft_wordsize(const char *s, char c);
 
