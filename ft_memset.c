@@ -6,7 +6,7 @@
 /*   By: wqarro-v <wqarro-v@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/27 16:15:16 by wqarro-v          #+#    #+#             */
-/*   Updated: 2018/11/28 19:34:40 by wqarro-v         ###   ########.fr       */
+/*   Updated: 2018/12/12 18:19:44 by wqarro-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ void	*ft_memset(void *dest, int c, size_t len)
 	buff = (unsigned char *)dest;
 	sym = (char)c;
 	while (len--)
-	{
 		*buff++ = sym;
-	}
 	return (dest);
 }

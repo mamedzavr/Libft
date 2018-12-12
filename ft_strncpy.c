@@ -6,7 +6,7 @@
 /*   By: wqarro-v <wqarro-v@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 15:03:56 by wqarro-v          #+#    #+#             */
-/*   Updated: 2018/11/30 17:44:52 by wqarro-v         ###   ########.fr       */
+/*   Updated: 2018/12/12 19:56:22 by wqarro-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,9 @@ char	*ft_strncpy(char *dest, const char *str, size_t len)
 
 	buff = dest;
 	while (len--)
-	{
 		if (*str == '\0')
 			*buff++ = '\0';
 		else
 			*buff++ = *str++;
-	}
 	return (dest);
 }

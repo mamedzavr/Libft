@@ -6,7 +6,7 @@
 /*   By: wqarro-v <wqarro-v@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/02 16:58:43 by wqarro-v          #+#    #+#             */
-/*   Updated: 2018/12/09 20:14:40 by wqarro-v         ###   ########.fr       */
+/*   Updated: 2018/12/12 19:48:07 by wqarro-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,5 @@ int		ft_isalnum(int c)
 {
 	if (ft_isalpha(c) != 0 || ft_isdigit(c) != 0)
 		return (1);
-	else
-		return (0);
+	return (0);
 }

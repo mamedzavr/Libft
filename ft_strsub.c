@@ -6,7 +6,7 @@
 /*   By: wqarro-v <wqarro-v@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/04 17:37:46 by wqarro-v          #+#    #+#             */
-/*   Updated: 2018/12/05 13:20:51 by wqarro-v         ###   ########.fr       */
+/*   Updated: 2018/12/12 19:59:45 by wqarro-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	if (!(str = malloc(sizeof(char) * (len + 1))))
 		return (NULL);
 	while (len--)
-	{
-		*str = *(s + start);
-		str++;
-		s++;
-	}
+		*str++ = *(s++ + start);
 	*str = '\0';
 	str = str - length;
 	return (str);

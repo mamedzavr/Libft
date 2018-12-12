@@ -6,7 +6,7 @@
 /*   By: wqarro-v <wqarro-v@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/08 17:59:43 by wqarro-v          #+#    #+#             */
-/*   Updated: 2018/12/08 18:00:43 by wqarro-v         ###   ########.fr       */
+/*   Updated: 2018/12/12 20:09:33 by wqarro-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,8 @@ int		ft_power(int base, int power)
 	int		number;
 
 	number = 1;
-	i = 0;
-	while (i < power)
-	{
+	i = -1;
+	while (++i < power)
 		number *= base;
-		i++;
-	}
 	return (number);
 }
