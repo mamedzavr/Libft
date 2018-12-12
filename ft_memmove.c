@@ -6,7 +6,7 @@
 /*   By: wqarro-v <wqarro-v@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/29 16:51:50 by wqarro-v          #+#    #+#             */
-/*   Updated: 2018/12/11 15:24:07 by wqarro-v         ###   ########.fr       */
+/*   Updated: 2018/12/12 16:06:20 by wqarro-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_memmove(void *dest, const void *str, size_t len)
 	unsigned char			*buff;
 	unsigned const char		*src;
 
+	if (dest == str)
+		return (dest);
 	if (!dest || !str)
 		return (NULL);
 	buff = (unsigned char *)dest;
